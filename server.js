@@ -1,9 +1,11 @@
-require("dotenv").config();
-const app = express();
 const express = require("express");
+require("dotenv").config();
 const cors = require("cors");
 const nodemailer = require("nodemailer");
+
+const app = express(); // NU werkt het
 const PORT = process.env.PORT || 3000;
+
 
 
 // Middleware
